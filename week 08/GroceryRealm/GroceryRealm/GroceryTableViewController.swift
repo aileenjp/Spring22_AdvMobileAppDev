@@ -45,9 +45,11 @@ class GroceryTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        var cellConfig = cell.defaultContentConfiguration()
         let item = groceryList[indexPath.row]
-        cell.textLabel!.text = item.name
-           cell.accessoryType = item.bought ? .checkmark : .none //set checkmark if bought
+        cellConfig.text = item.name
+        cell.contentConfiguration = cellConfig
+        cell.accessoryType = item.bought ? .checkmark : .none //set checkmark if bought
         return cell
     }
 
