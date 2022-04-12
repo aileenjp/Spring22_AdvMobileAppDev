@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Music</string>
+    <string name="songText">Favorite song</string>
+    <string name="artistText">Favorite artist</string>
+    <string name="fabSave">save</string>
+    <string name="favsSaved">Favorites saved </string>
+</resources>
