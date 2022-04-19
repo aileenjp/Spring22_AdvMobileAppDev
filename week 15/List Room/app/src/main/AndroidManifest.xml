@@ -8,8 +8,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_list_round"
         android:supportsRtl="true"
-        android:theme="@style/MyTheme"
-        android:name=".ListApplication">
+        android:theme="@style/MyTheme">
         <activity
             android:name=".MainActivity"
             android:exported="true">

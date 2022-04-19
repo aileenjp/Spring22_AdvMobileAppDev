@@ -5,5 +5,6 @@
         android:id="@+id/action_deleteAll"
         android:orderInCategory="100"
         android:title="@string/action_settings"
-        app:showAsAction="never" />
+        app:showAsAction="never"/>
+
 </menu>

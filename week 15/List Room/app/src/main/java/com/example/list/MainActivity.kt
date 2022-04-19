@@ -53,9 +53,8 @@ class MainActivity : AppCompatActivity() {
             dialog.setPositiveButton(R.string.add) {dialog, which ->
                 val newItem = editText.text.toString()
                 if (!newItem.isEmpty()){
-                    val newID = UUID.randomUUID().toString();
                     //add item
-                    viewModel.add(Item(newID, newItem))
+                    viewModel.add(Item(0, newItem))
                     Snackbar.make(view, R.string.itemAdded, Snackbar.LENGTH_LONG)
                         .setAction(R.string.action, null).show()
                 }
@@ -87,4 +86,5 @@ class MainActivity : AppCompatActivity() {
             else -> super.onOptionsItemSelected(item)
         }
     }
+
 }
